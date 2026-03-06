@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar - Exercise</title>
+    <style>
+        /* CSS để định dạng giao diện */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ccc; /* Màu nền xám nhạt phía dưới thanh điều hướng */
+        }
+
+        /* Thanh điều hướng (Navbar) */
+        nav {
+            background-color: #333333; /* Màu nền xám đậm gần đen */
+            width: 100%;
+        }
+
+        /* Danh sách các mục menu */
+        nav ul {
+            list-style-type: none; /* Xóa dấu chấm đầu dòng */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Sắp xếp các mục nằm ngang */
+            justify-content: center; /* Căn giữa các mục trong thanh điều hướng */
+        }
+
+        /* Từng mục trong menu */
+        nav li {
+            border-right: 1px solid #444; /* Thêm đường kẻ mờ phân cách giữa các mục (tùy chọn) */
+        }
+
+        nav li:last-child {
+            border-right: none; /* Mục cuối cùng không có đường kẻ */
+        }
+
+        /* Định dạng các đường link */
+        nav li a {
+            display: block;
+            color: #ffffff; /* Màu chữ trắng */
+            text-align: center;
+            padding: 18px 25px; /* Tạo khoảng cách cho các nút */
+            text-decoration: none; /* Bỏ gạch chân */
+            font-size: 18px;
+            transition: 0.3s; /* Hiệu ứng mượt khi di chuột */
+        }
+
+        /* Hiệu ứng khi di chuột qua (Hover) */
+        nav li a:hover {
+            background-color: #111111; /* Đổi màu nền tối hơn khi hover */
+            color: #ffca28; /* Đổi màu chữ (nếu muốn tạo điểm nhấn) */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
